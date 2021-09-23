@@ -1,0 +1,1 @@
+Smart contract to send 'waves' and messages
