@@ -31,7 +31,7 @@ contract WavePortal {
 
 
         totalWaves += 1;
-        console.log("%s is pood!", msg.sender);
+        console.log("%s is waved!", msg.sender);
         waves.push(Wave(msg.sender, _message, block.timestamp));
         emit NewWave(msg.sender, block.timestamp, _message);
 
@@ -52,7 +52,7 @@ contract WavePortal {
     }
 
     function getTotalWaves() view public returns (uint){
-        console.log("We have %d total poos", totalWaves);
+        console.log("We have %d total waves", totalWaves);
         return totalWaves;
     }
 
