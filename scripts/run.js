@@ -11,10 +11,10 @@ async function main() {
     let contractBalance = await hre.ethers.provider.getBalance(waveContract.address);
     console.log("Contract balance:", hre.ethers.utils.formatEther(contractBalance))
 
-    let waveTxn = await waveContract.wave("Poo 1");
+    let waveTxn = await waveContract.wave("Wave 1");
     await waveTxn.wait();
 
-    waveTxn = await waveContract.wave("Poo 2");
+    waveTxn = await waveContract.wave("Wave 2");
     await waveTxn.wait();
 
     contractBalance = await hre.ethers.provider.getBalance(waveContract.address);
